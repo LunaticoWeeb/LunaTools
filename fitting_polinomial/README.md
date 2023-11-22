@@ -6,15 +6,7 @@ Programa que realiza o ajuste de uma função polinomial de grau n a um conjunto
 
 ### Requisitos
 
-Para executar o programa, é necessário ter instalado o [Python](https://www.python.org/), os pacotes [NumPy](https://numpy.org/) e [Matplotlib](https://matplotlib.org/) e [TOML](https://github.com/uiri/toml).
-
-### Teste
-
-Para testar o programa, basta executar o _script_ `./test/teste.sh` com o comando:
-
-```bash
-bash ./test/teste.sh
-```
+Para executar o programa, é necessário ter instalado o [Python](https://www.python.org/), os pacotes [NumPy](https://numpy.org/), [Matplotlib](https://matplotlib.org/) e [TOML](https://github.com/uiri/toml).
 
 ### Execução
 
@@ -72,4 +64,3 @@ tipo_linha = "solid"
 estilo = "classic"
 ```
 As opções de estilo estão em `config/graph_options.toml`.
-
