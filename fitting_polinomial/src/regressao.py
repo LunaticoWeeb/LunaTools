@@ -27,8 +27,8 @@ def plotar_grafico(config, graph_options):
     """Plota o gráfico dos dados e da regressão"""
 
     # Carregando os dados
-    arq_eixo_x = config['arquivos']['coord_x']
-    arq_eixo_y = config['arquivos']['coord_y']
+    arq_eixo_x = config['arquivos']['pasta'] + config['arquivos']['arq_coord_x']
+    arq_eixo_y = config['arquivos']['pasta'] + config['arquivos']['arq_coord_y']
     eixo_x, eixo_y = load_dados(arq_eixo_x, arq_eixo_y)
 
     # Calculando a regressão
