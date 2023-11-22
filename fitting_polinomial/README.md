@@ -20,11 +20,9 @@ arq_coord_y = "coord_y.txt" # Arquivo com as coordenadas y
 
 [grau]
 grau = 2 # Grau do polinômio
+```
 
-.
-.
-.
-
+```toml
 [legendas] # Alterar as legendas do gráfico
 titulo = "Gráfico Linear"
 eixo_x = "Eixo X"
