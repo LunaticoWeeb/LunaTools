@@ -1,12 +1,12 @@
 [arquivos]
-coord_x = "/home/lunaweeb/Projetos/LunaTools/regressao/arquivos/coord_x.txt" 
-coord_y = "/home/lunaweeb/Projetos/LunaTools/regressao/arquivos/coord_y.txt"
+coord_x = "/home/lunaweeb/Projetos/LunaTools/fitting_polinomial/arquivos/coord_x.txt" 
+coord_y = "/home/lunaweeb/Projetos/LunaTools/fitting_polinomial/arquivos/coord_y.txt"
 
 [grau]
 grau = 3
 
 [alvo]
-pasta = "/home/lunaweeb/Projetos/LunaTools/regressao/arquivos/"
+pasta = "/home/lunaweeb/Projetos/LunaTools/fitting_polinomial/arquivos/"
 nome = "gráfico"
 
 [legendas]
