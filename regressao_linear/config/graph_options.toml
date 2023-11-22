@@ -1,4 +1,4 @@
-[color]
+[colors]
 red = "r"
 blue = "b"
 green = "g"
@@ -26,13 +26,13 @@ x = "x"
 diamond = "D"
 thin_diamond = "d"
 
-[linestyle]
+[linestyles]
 solid = "-"
 dashed = "--"
 dashdot = "-."
 dotted = ":"
 
-[style]
+[styles]
 classic = "classic"
 seaborn = "seaborn"
 ggplot = "ggplot"

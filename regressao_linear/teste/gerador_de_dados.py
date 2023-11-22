@@ -24,7 +24,7 @@ def save_data(x, y, x_filename, y_filename):
 
 # Example usage:
 n = 100
-degree = 3
+degree = 2
 x, y = generate_data(n, degree)
 
 # Save the data

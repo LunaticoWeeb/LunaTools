@@ -1,4 +1,4 @@
-from . import regressao as rl
+from .src import regressao as rl
 import toml
 import os
 
@@ -8,8 +8,8 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
     # Criando o caminho para o arquivo de configuração e opções de gráfico
-    config_path = os.path.join(script_dir, 'config.toml')
-    graph_options_path = os.path.join(script_dir, 'graph_options.toml')
+    config_path = os.path.join(script_dir, 'config/config.toml')
+    graph_options_path = os.path.join(script_dir, 'config/graph_options.toml')
 
     # Carregando o arquivo de configuração
     config = toml.load(config_path) 

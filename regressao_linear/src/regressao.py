@@ -39,17 +39,19 @@ def plotar_grafico(config, graph_options):
     titulo = config['legendas']['titulo']
     legenda_x = config['legendas']['eixo_x']
     legenda_y = config['legendas']['eixo_y']
-    nome_arq = config['alvo']['alvo']
+    nome_arq = config['alvo']['pasta'] + config['alvo']['nome']
 
     # Estilo do gráfico
-    plt.style.use(graph_options['style'][config['estilo']['estilo']])
-    dados_estilo = graph_options['markers'][config['estilo']['tipo_marca']] + graph_options['colors'][config['estilo']['cor_dados']]
-    linha_estilo = graph_options['colors'][config['estilo']['cor_linha']]  
+    plt.style.use(graph_options['styles'][config['estilo']['estilo']])
+    dados_estilo = (graph_options['markers'][config['estilo']['tipo_marca']] 
+                    + graph_options['colors'][config['estilo']['cor_dados']])
+    linha_estilo = (graph_options['colors'][config['estilo']['cor_linha']]
+                    + graph_options['linestyles'][config['estilo']['tipo_linha']])
 
     # Plotando o gráfico
     fig, ax = plt.subplots() # retorna uma tupla com a figura e os eixos
-    ax.plot(eixo_x, eixo_y, 'or', label='Dados') # plotando os dados
-    ax.plot(coeficientes[0], coeficientes[1], '-b', label='Regressão') # plotando a reta
+    ax.plot(eixo_x, eixo_y, dados_estilo, label='Dados') # plotando os dados
+    ax.plot(coeficientes[0], coeficientes[1], linha_estilo, label='Regressão') # plotando a reta
       
     # adicionando as legendas
     ax.set_title(titulo) # adicionando o titulo
